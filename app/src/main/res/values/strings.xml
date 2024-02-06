@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Blood Bowl Companion</string>
+
+
+    <string-array name="list_headers">
+        <item>Weather Table</item>
+        <item>Kickoff table</item>
+        <item>Skills</item>
+        <item>Offense Options</item>
+        <item>Passing Chart</item>
+        <item>Foul Table</item>
+        <item>Injury/casualty table</item>
+        <item>Nuffle Table</item>
+    </string-array>
+
+    <string name="weatherTable">Weather Table</string>
+    <string name="kickoffTable">Kickoff table</string>
+    <string name="skills">Skills</string>
+    <string name="offenseOptions">Offense Options</string>
+    <string name="passingChart">Passing Chart</string>
+    <string name="foulTable">Foul Table</string>
+    <string name="injuryTable">Injury/casualty Table</string>
+    <string name="nuffleTable">Nuffle Table</string>
+
+    <string-array name="weather_headers_numbers">
+        <item>2</item>
+        <item>3</item>
+        <item>4–10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="weather2">2</string>
+    <string name="weather3">3</string>
+    <string name="weather410">4-10</string>
+    <string name="weather11">11</string>
+    <string name="weather12">12</string>
+
+    <string-array name="weather_descriptions">
+        <item>Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch
+            when a drive ends are placed in the Reserves box. They must miss the next drive.</item>
+        <item>A glorious day, but the clear skies and bright sunlight interfere with the passing game!
+        Apply a -1 modifier every time a player tests against their Passing Ability.</item>
+        <item>Neither too cold nor too hot. A warm, dry and slightly overcast day provides the perfect conditions for Blood Bowl.</item>
+        <item>A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier
+        every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</item>
+        <item>Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player
+            attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</item>
+    </string-array>
+
+    <string name="weather_sweltering_full">Some players faint in the unbearable heat! D3 randomly selected players from each team that are on the pitch
+            when a drive ends are placed in the Reserves box. They must miss the next drive.</string>
+    <string name="weather_sunny_full">A glorious day, but the clear skies and bright sunlight interfere with the passing game!
+        Apply a -1 modifier every time a player tests against their Passing Ability.</string>
+    <string name="weather_perfect_full">Neither too cold nor too hot. A warm, dry and slightly overcast day provides the perfect conditions for Blood Bowl.</string>
+    <string name="weather_rain_full">A torrential downpour leaves the players soaked and the ball very slippery! Apply a -1 modifier
+        every time a player makes an Agility test to catch or pick-up the ball, or to attempt to interfere with a pass.</string>
+    <string name="weather_blizzard_full">Freezing conditions and heavy falls of snow make the footing treacherous. Apply a -1 modifier every time a player
+            attempts to Rush an extra square. Additionally, the poor visibility means that only Quick and Short passes can be attempted.</string>
+
+    <string-array name="weather_titles">
+        <item>Sweltering Heat</item>
+        <item>Very Sunny</item>
+        <item>Perfect Conditions</item>
+        <item>Pouring Rain</item>
+        <item>Blizzard</item>
+    </string-array>
+
+    <string name="weather_sweltering_title">Sweltering Heat</string>
+    <string name="weather_sunny_title">Very Sunny</string>
+    <string name="weather_perfect_title">Perfect Conditions</string>
+    <string name="weather_rain_title">Pouring Rain</string>
+    <string name="weather_blizzard_title">Blizzard</string>
+
+    <string-array name="kickoff_headers">
+        <item>Get the Ref</item>
+        <item>Time-out</item>
+        <item>Solid Defense</item>
+        <item>High Kick</item>
+        <item>Cheering Fans</item>
+        <item>Brilliant Coaching</item>
+        <item>Changing Weather</item>
+        <item>Quick Snap</item>
+        <item>Blitz</item>
+        <item>Officious Ref</item>
+        <item>Pitch Invasion</item>
+    </string-array>
+
+    <string-array name="kickoff_headers_numbers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="kickoff_descriptions">
+        <item>Each team gains a free Bribe Inducement. This Inducement must be used before the end of the game or it is lost.</item>
+        <item>If the kicking team\'s turn marker is on turn 6, 7, or 8 for the half, both coaches move their turn marker back one
+        space. Otherwise, both coaches move their turn marker forward one space.</item>
+        <item>D3+3 open players on the kicking team may be removed and set up again in different locations, following all of
+        the usual set-up rules.</item>
+        <item>One open player on the receiving team may be moved any number of squares, regardless of their MA, and placed in
+        the same square the ball will land in.</item>
+        <item>Both coaches roll a D6 and add the number of cheerleaders on their Team Draft list. The coach with the highest total may
+        immediately roll once on the Prayers to Nuffle table. In the case of a tie, neither coach rolls on the Prayers to Nuffle table.
+        Note that if you roll a result that is currently in effect, you must re-roll it.</item>
+        <item>Both coaches roll a D6 and add the number of assistant coaches on their Team Draft list. The coach with the highest total gains
+        one extra team re-roll for the drive ahead. If this team re-roll is not used before the end of this drive, it is lost. In the case
+        of a tie, neither coach gains an extra team re-roll.</item>
+        <item>Make a new roll on the Weather Table and apply that result. If the weather conditions are \'Perfect Conditions\' as a result
+        of this roll, the ball will scatter before landing.</item>
+        <item>D3+3 open players on the receiving team may immediately move one square in any direction.</item>
+        <item>D3+3 open players on the kicking team may immediately activate to perform a move action. One may perform a blitz action and one may
+        perform throw team-mate action. If a player falls over or is knocked down, no further players can be activated and the blitz ends immediately</item>
+        <item>Both coaches roll a D6 and add their Fan Factor to the result. The coach that rolls the lowest randomly selects one of their players
+        from among those on the pitch. In the case of a tie, both coaches randomly select a player. Roll a D6 for the selected player(s).
+        On a roll of 2+, the player and the ref argue and it comes to blows. The player is placed prone and becomes stunned. On a roll of 1, the
+        player is immediately sent off.</item>
+        <item>Both coaches roll a D6 and add their fan factor to the result. the coach that rolls the lowest randomly selects D3 of their players
+        from among those on the pitch. In the case of a tie, both coaches randomly select D3 players from among on those on the pitch. All of
+        the randomly selected players are placed prone and become stunned.</item>
+    </string-array>
+    <string name="kickoff2">2</string>
+    <string name="kickoffRef">Get The Ref</string>
+    <string name="kickoffRefFull">Each team gains a free Bribe Inducement. This Inducement must be used before the end of the game or it is lost</string>
+</resources>
