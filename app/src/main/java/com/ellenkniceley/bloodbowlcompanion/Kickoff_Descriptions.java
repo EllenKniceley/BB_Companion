@@ -2,13 +2,12 @@ package com.ellenkniceley.bloodbowlcompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Kickoff_Descriptions extends AppCompatActivity {
 
@@ -31,28 +30,25 @@ public class Kickoff_Descriptions extends AppCompatActivity {
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView menuTitle = findViewById(R.id.toolbar_title);
+        String kickoffTable = "Kickoff Table";
+        menuTitle.setText(kickoffTable);
 
-        menuIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { showMenu(v);
-
-            }
-        });
+        menuIcon.setOnClickListener(this::showMenu);
 
     }
 
     private void showMenu(View v) {
         PopupMenu popupMenu = new PopupMenu(Kickoff_Descriptions.this, v);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                if (item.getItemId() == R.id.appInfo)
-                    Toast.makeText(Kickoff_Descriptions.this, "You clicked app info", Toast.LENGTH_SHORT).show();
-                return true;
-
-
+        popupMenu.setOnMenuItemClickListener(item -> {
+            if (item.getItemId() == R.id.appInfo) {
+                Intent intent = new Intent(Kickoff_Descriptions.this, App_Info_Page.class);
+                startActivity(intent);
             }
+
+            return true;
+
+
         });
         popupMenu.show();
     }

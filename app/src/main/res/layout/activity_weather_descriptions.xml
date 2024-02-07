@@ -12,7 +12,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="660dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginStart="8dp"
@@ -38,18 +38,23 @@
                 android:textAlignment="center"
                 android:textColor="@color/tanAccent"
                 android:textSize="48sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/weatherDescriptions"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.323" />
+                app:layout_constraintTop_toBottomOf="@+id/weatherNumbers"
+                app:layout_constraintVertical_bias="0.455" />
 
             <TextView
                 android:id="@+id/weatherDescriptions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/graduate"
-                android:padding="10dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 android:text="@string/weather_blizzard_full"
                 android:textAlignment="center"
                 android:textColor="@color/tanAccent"
@@ -59,7 +64,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.784" />
+                app:layout_constraintVertical_bias="0.883" />
 
             <TextView
                 android:id="@+id/weatherNumbers"
@@ -70,6 +75,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/tanAccent"
                 android:textSize="96sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
