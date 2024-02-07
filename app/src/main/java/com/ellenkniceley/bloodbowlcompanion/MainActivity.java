@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements MainList_Recycler
             if(item.getItemId()== R.id.appInfo) {
                 Intent intent = new Intent(MainActivity.this, App_Info_Page.class);
                 startActivity(intent);
+            }
+            if(item.getItemId()==R.id.appHome) {
+                Toast.makeText(this, "You are already on the Home screen.", Toast.LENGTH_SHORT).show();
             }
              return true;
 

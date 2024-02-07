@@ -45,7 +45,10 @@ public class Kickoff_Descriptions extends AppCompatActivity {
                 Intent intent = new Intent(Kickoff_Descriptions.this, App_Info_Page.class);
                 startActivity(intent);
             }
-
+            if (item.getItemId()== R.id.appHome) {
+                Intent intent = new Intent(Kickoff_Descriptions.this, MainActivity.class);
+                startActivity(intent);
+            }
             return true;
 
 

@@ -55,7 +55,10 @@ public class Kickoff_table_main extends AppCompatActivity implements KickoffRecy
                 Intent intent = new Intent(Kickoff_table_main.this, App_Info_Page.class);
                 startActivity(intent);
             }
-
+            if(item.getItemId()==R.id.appHome) {
+                Intent intent = new Intent(Kickoff_table_main.this, MainActivity.class);
+                startActivity(intent);
+            }
             return true;
         });
         popupMenu.show();

@@ -2,6 +2,7 @@ package com.ellenkniceley.bloodbowlcompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,8 +28,13 @@ public class App_Info_Page extends AppCompatActivity {
         PopupMenu popupMenu = new PopupMenu(App_Info_Page.this,v);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
         popupMenu.setOnMenuItemClickListener(item -> {
-            if(item.getItemId()== R.id.appInfo)
-                Toast.makeText(App_Info_Page.this, "You are already on the App Info page.", Toast.LENGTH_SHORT).show();
+            if(item.getItemId()== R.id.appInfo) {
+                Toast.makeText(App_Info_Page.this, "You are already on the App Info screen.", Toast.LENGTH_SHORT).show();
+            }
+            if(item.getItemId()==R.id.appHome) {
+                Intent intent = new Intent(App_Info_Page.this, MainActivity.class);
+                startActivity(intent);
+            }
             return true;
 
 
