@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -58,6 +57,19 @@ public class MainList_RecyclerViewAdapter extends RecyclerView.Adapter<MainList_
                     Intent intent = new Intent(context, Kickoff_table_main.class);
                     context.startActivity(intent);
                 });
+                break;
+            case 2:
+                holder.itemView.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, Skills_main.class);
+                    context.startActivity(intent);
+            });
+                break;
+            case 3:
+                holder.itemView.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, PassingChart.class);
+                    context.startActivity(intent);
+                });
+                break;
         }
     }
 

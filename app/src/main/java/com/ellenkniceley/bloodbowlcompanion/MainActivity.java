@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity implements MainList_Recycler
     ArrayList<ListModel> listModels = new ArrayList<>();
 
     int[] listImages = {R.drawable.baseline_cloud_24, R.drawable.baseline_sports_football_24, R.drawable.baseline_construction_24,
-                        R.drawable.baseline_sports_martial_arts_24, R.drawable.baseline_arrow_outward_24, R.drawable.baseline_back_hand_24, R.drawable.baseline_local_pharmacy_24, R.drawable.baseline_casino_24};
-    int[] type = {0, 1, 2, 3, 4, 5, 6, 7};
+                        R.drawable.baseline_arrow_outward_24, R.drawable.baseline_back_hand_24, R.drawable.baseline_local_pharmacy_24, R.drawable.baseline_casino_24};
+    int[] type = {0, 1, 2, 3, 4, 5, 6};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
