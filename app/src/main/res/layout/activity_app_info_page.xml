@@ -71,7 +71,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appChartCredit"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/appChartCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graduate"
+        android:paddingHorizontal="10dp"
+        android:text="@string/app_info_chart_credit"
+        android:textColor="@color/list_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appDisclaimerTextview"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.095" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

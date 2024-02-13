@@ -10,6 +10,7 @@
     It is to be used alongside the official handbook for when you need to quickly check a table or skill.</string>
     <string name="app_info_disclaimer">This is an unofficial application that is not endorsed in any way by Games Workshop Limited or any of
     its subsidiaries. Blood Bowl is a trademark of Games Workshop Limited. All Rights Reserved to their respective owners.</string>
+    <string name="app_info_chart_credit">Credit to the Nuffle Amorical Football (NAF) for the passing chart.</string>
 
     <string-array name="list_headers">
         <item>Weather Table</item>
@@ -138,4 +139,31 @@
     <string name="kickoff2">2</string>
     <string name="kickoffRef">Get The Ref</string>
     <string name="kickoffRefFull">Each team gains a free Bribe Inducement. This Inducement must be used before the end of the game or it is lost</string>
+
+    <string-array name="foul_numbers">
+        <item>1</item>
+        <item>2–5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="foul_headers">
+        <item>You\'re outta here!</item>
+        <item>I don\'t care!</item>
+        <item>When you put it like that</item>
+    </string-array>
+
+    <string-array name="foul_descriptions">
+        <item>The referee is so enraged that the coach is ejected along with the player.
+        For the remainder of the game, you may no longer Argue The Call and must apply a
+        -1 modifier when rolling for brilliant coaching.</item>
+        <item>The referee is not interested in your argument. The player is sent-off
+        and a turnover caused.</item>
+        <item>The referee is swayed by your argument. A Turnover is still caused,
+            but the player that committed the foul is not Sent-off.</item>
+    </string-array>
+
+    <string name="foul6">6</string>
+    <string name="foulWell"><![CDATA[when you put it like that]]></string>
+    <string name="foulWellFull">The referee is swayed by your argument. A Turnover
+    is still caused, but the player that committed the foul is not Sent-off.</string>
 </resources>

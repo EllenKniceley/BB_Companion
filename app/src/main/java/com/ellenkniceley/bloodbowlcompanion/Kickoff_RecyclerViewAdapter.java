@@ -53,15 +53,12 @@ public class Kickoff_RecyclerViewAdapter extends RecyclerView.Adapter<Kickoff_Re
             tvKickoffNumber = itemView.findViewById(R.id.kickoffNumbers);
             tvKickoffTitle = itemView.findViewById(R.id.kickoffHeader);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (kickoffRecyclerViewInterface != null) {
-                        int pos = getAdapterPosition();
+            itemView.setOnClickListener(v -> {
+                if (kickoffRecyclerViewInterface != null) {
+                    int pos = getAdapterPosition();
 
-                        if (pos != RecyclerView.NO_POSITION) {
-                            kickoffRecyclerViewInterface.onItemClick(pos);
-                        }
+                    if (pos != RecyclerView.NO_POSITION) {
+                        kickoffRecyclerViewInterface.onItemClick(pos);
                     }
                 }
             });
