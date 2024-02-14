@@ -30,7 +30,7 @@ public class Foul_Descriptions extends AppCompatActivity {
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView menuTitle = findViewById(R.id.toolbar_title);
-        String foulTable = "Foul Table";
+        String foulTable = "Foul Table (1D6)";
         menuTitle.setText(foulTable);
 
         menuIcon.setOnClickListener(this::showMenu);
@@ -50,5 +50,6 @@ public class Foul_Descriptions extends AppCompatActivity {
             }
             return true;
         });
+        popupMenu.show();
     }
 }

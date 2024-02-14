@@ -9,49 +9,46 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-public class Weather_Descriptions extends AppCompatActivity {
+public class InjuryRollDescriptions extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather_descriptions);
+        setContentView(R.layout.activity_injury_roll_descriptions);
 
         String number = getIntent().getStringExtra("NUMBER");
         String title = getIntent().getStringExtra("TITLE");
         String description = getIntent().getStringExtra("DESCRIPTION");
 
-        TextView weatherNumber = findViewById(R.id.weatherNumbers);
-        TextView weatherTitle = findViewById(R.id.weatherTitles);
-        TextView weatherDescription = findViewById(R.id.weatherDescriptions);
+        TextView injuryRollNumber = findViewById(R.id.injuryRollNumbers2);
+        TextView injuryRollTitle = findViewById(R.id.injuryRollHeaders2);
+        TextView injuryRollDescription = findViewById(R.id.injuryRollDescriptions);
 
-        weatherNumber.setText(number);
-        weatherTitle.setText(title);
-        weatherDescription.setText(description);
+        injuryRollNumber.setText(number);
+        injuryRollTitle.setText(title);
+        injuryRollDescription.setText(description);
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView menuTitle = findViewById(R.id.toolbar_title);
-        String weatherTable = "Weather Table (2D6)";
-        menuTitle.setText(weatherTable);
+        String injuryRollToolbarTitle = "Injury Roll (2D6)";
+        menuTitle.setText(injuryRollToolbarTitle);
 
         menuIcon.setOnClickListener(this::showMenu);
-
     }
 
     private void showMenu(View v) {
-        PopupMenu popupMenu = new PopupMenu(Weather_Descriptions.this, v);
+        PopupMenu popupMenu = new PopupMenu(InjuryRollDescriptions.this, v);
         popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
         popupMenu.setOnMenuItemClickListener(item -> {
-            if (item.getItemId() == R.id.appInfo) {
-                Intent intent = new Intent(Weather_Descriptions.this, App_Info_Page.class);
+            if (item.getItemId()==R.id.appInfo) {
+                Intent intent = new Intent(InjuryRollDescriptions.this, App_Info_Page.class);
                 startActivity(intent);
             }
-            if (item.getItemId()==R.id.appHome) {
-                Intent intent = new Intent(Weather_Descriptions.this, MainActivity.class);
+            if (item.getItemId()==R.id.appHome){
+                Intent intent = new Intent(InjuryRollDescriptions.this, MainActivity.class);
                 startActivity(intent);
             }
             return true;
-
-
         });
         popupMenu.show();
     }

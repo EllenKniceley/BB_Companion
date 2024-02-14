@@ -34,7 +34,7 @@ public class MainActivity2 extends AppCompatActivity implements WeatherRecyclerV
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView title = findViewById(R.id.toolbar_title);
-        String weatherTable = "Weather Table";
+        String weatherTable = "Weather Table (2D6)";
         title.setText(weatherTable);
 
         menuIcon.setOnClickListener(this::showMenu);

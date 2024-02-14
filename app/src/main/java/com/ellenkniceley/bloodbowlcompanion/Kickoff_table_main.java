@@ -31,7 +31,7 @@ public class Kickoff_table_main extends AppCompatActivity implements KickoffRecy
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView title = findViewById(R.id.toolbar_title);
-        String kickoffTable = "Kickoff Table";
+        String kickoffTable = "Kickoff Table (2D6)";
         title.setText(kickoffTable);
 
         menuIcon.setOnClickListener(this::showMenu);

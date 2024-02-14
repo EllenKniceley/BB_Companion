@@ -30,7 +30,7 @@ public class Kickoff_Descriptions extends AppCompatActivity {
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView menuTitle = findViewById(R.id.toolbar_title);
-        String kickoffTable = "Kickoff Table";
+        String kickoffTable = "Kickoff Table (2D6)";
         menuTitle.setText(kickoffTable);
 
         menuIcon.setOnClickListener(this::showMenu);

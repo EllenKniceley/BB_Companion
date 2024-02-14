@@ -166,4 +166,37 @@
     <string name="foulWell"><![CDATA[when you put it like that]]></string>
     <string name="foulWellFull">The referee is swayed by your argument. A Turnover
     is still caused, but the player that committed the foul is not Sent-off.</string>
+
+    <string-array name="injuryTableHeaderList">
+        <item>Injury Roll</item>
+        <item>Stunty Injury Roll</item>
+        <item>Casualty Roll</item>
+        <item>Lasting Injury Roll</item>
+    </string-array>
+
+    <string name="injuryTableHeader">Injury Roll</string>
+
+    <string-array name="injuryRollNumbers">
+        <item>2–7</item>
+        <item>8–9</item>
+        <item>10+</item>
+    </string-array>
+
+    <string-array name="injuryRollHeaders">
+        <item>Stunned</item>
+        <item>KO\'d</item>
+        <item>Casualty!</item>
+    </string-array>
+
+    <string-array name="injuryRollDescriptions">
+        <item>The player immediately becomes stunned, and is laid face-down on the pitch.</item>
+        <item>The player is immediately removed from play and placed in the knocked-out box of their team dugout.
+        At the end of each drive, there is a chance any knocked-out players will recover.</item>
+        <item>The player becomes a casualty and is immediately removed from play and placed in the casualty box of their team dugout.
+        The coach of the opposing team immediately makes a casualty roll against the player.</item>
+    </string-array>
+
+    <string name="injuryRoll2">2–7</string>
+    <string name="injuryRollStunned">Stunned</string>
+    <string name="injuryRollStunnedFull">The player immediately becomes stunned, and is laid face-down on the pitch.</string>
 </resources>

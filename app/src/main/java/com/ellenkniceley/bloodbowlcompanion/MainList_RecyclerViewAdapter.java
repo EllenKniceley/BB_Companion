@@ -76,6 +76,12 @@ public class MainList_RecyclerViewAdapter extends RecyclerView.Adapter<MainList_
                     context.startActivity(intent);
                 });
                 break;
+            case 5:
+                holder.itemView.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, Injury_Table_Main.class);
+                    context.startActivity(intent);
+                });
+                break;
         }
     }
 
