@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +18,7 @@ public class Injury_Table_Main extends AppCompatActivity implements InjuryTableR
 
     ArrayList<InjuryTableListModel> injuryTableListModels = new ArrayList<>();
 
-    int[] type = {0, 1, 2 , 3};
+    int[] type = {0, 1, 2, 3};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +65,8 @@ public class Injury_Table_Main extends AppCompatActivity implements InjuryTableR
     private void setUpInjuryListModels() {
         String[] injuryListTitle = getResources().getStringArray(R.array.injuryTableHeaderList);
 
-        for (int i = 0; i<injuryListTitle.length; i++){
-            injuryTableListModels.add(new InjuryTableListModel(injuryListTitle[i]));
+        for (String s : injuryListTitle) {
+            injuryTableListModels.add(new InjuryTableListModel(s));
         }
     }
 }

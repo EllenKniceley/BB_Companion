@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MainList_RecyclerViewAdapter extends RecyclerView.Adapter<MainList_RecyclerViewAdapter.MyViewHolder>{
-    private OnItemListener mOnItemListener;
+    private final OnItemListener mOnItemListener;
     Context context;
     ArrayList<ListModel> listModels;
     int[] type;

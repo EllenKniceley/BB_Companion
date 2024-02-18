@@ -199,4 +199,32 @@
     <string name="injuryRoll2">2–7</string>
     <string name="injuryRollStunned">Stunned</string>
     <string name="injuryRollStunnedFull">The player immediately becomes stunned, and is laid face-down on the pitch.</string>
+
+    <string-array name="stuntyRollNumbers">
+        <item>2–6</item>
+        <item>7–8</item>
+        <item>9</item>
+        <item>10+</item>
+    </string-array>
+
+    <string-array name="stuntyRollHeaders">
+        <item>Stunned</item>
+        <item>KO\'d</item>
+        <item>Badly Hurt</item>
+        <item>Casualty!</item>
+    </string-array>
+
+    <string-array name="stuntyRollDescriptions">
+        <item>The player immediately becomes stunned, and is laid face-down on the pitch.</item>
+        <item>The player is immediately removed from play and placed in the knocked-out box of their team dugout.
+        At the end of each drive, there is a chance any knocked-out players will recover.</item>
+        <item>The player becomes a casualty and is immediately removed from play and placed in casualty box of
+        their team dugout. No casualty roll is made. Instead, a badly hurt result is automatically applied.</item>
+        <item>The player becomes a casualty and is immediately removed from play and placed in casualty box of
+        their team dugout. The coach of the opposing team immediately makes a casualty roll against the player.</item>
+    </string-array>
+
+    <string name="stuntyRoll2">2–6</string>
+    <string name="stuntyRollStunned">Stunned</string>
+    <string name="stuntyRollStunnedFull">The player immediately becomes stunned, and is laid face-down on the pitch.</string>
 </resources>

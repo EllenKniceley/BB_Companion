@@ -1,61 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    tools:context=".StuntyRollDescriptions">
 
+    <include
+        android:id="@+id/xml.toolbar"
+        layout="@layout/toolbar" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         app:cardBackgroundColor="@color/list_background"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xml.toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintBottom_toBottomOf="parent" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/foulHeader"
+                android:id="@+id/stuntyRollNumbers2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/graduate"
-                android:text="@string/foulWell"
-                android:textColor="@color/tanAccent"
-                android:textSize="20sp"
+                android:text="@string/stuntyRoll2"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/foulNumbers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/graduate"
-                android:paddingStart="10dp"
-                android:paddingTop="25dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="25dp"
-                android:text="@string/foul6"
                 android:textColor="@color/tanAccent"
-                android:textSize="20sp"
+                android:textSize="96sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.02"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.082" />
+
+            <TextView
+                android:id="@+id/stuntyRollHeaders2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/graduate"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/stuntyRollStunned"
+                android:textAlignment="center"
+                android:textColor="@color/tanAccent"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stuntyRollNumbers2"
+                app:layout_constraintVertical_bias="0.121" />
+
+            <TextView
+                android:id="@+id/stuntyRollDescriptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/graduate"
+                android:padding="30dp"
+                android:text="@string/stuntyRollStunnedFull"
+                android:textAlignment="center"
+                android:textColor="@color/tanAccent"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stuntyRollHeaders2"
+                tools:layout_editor_absoluteY="14dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

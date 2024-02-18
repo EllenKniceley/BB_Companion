@@ -13,6 +13,12 @@
         android:theme="@style/Theme.BloodbowlCompanion"
         tools:targetApi="31">
         <activity
+            android:name=".StuntyRollDescriptions"
+            android:exported="false" />
+        <activity
+            android:name=".Stunty_Roll_Main"
+            android:exported="false" />
+        <activity
             android:name=".InjuryRollDescriptions"
             android:exported="false" />
         <activity

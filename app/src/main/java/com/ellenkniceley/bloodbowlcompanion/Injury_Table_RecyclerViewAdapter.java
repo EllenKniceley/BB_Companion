@@ -46,6 +46,12 @@ public class Injury_Table_RecyclerViewAdapter extends RecyclerView.Adapter<Injur
                    context.startActivity(intent);
                });
                break;
+           case 1:
+               holder.itemView.setOnClickListener(v -> {
+                   Intent intent = new Intent(context, Stunty_Roll_Main.class);
+                   context.startActivity(intent);
+               });
+               break;
        }
     }
 
