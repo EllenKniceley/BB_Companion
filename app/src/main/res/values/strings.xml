@@ -227,4 +227,140 @@
     <string name="stuntyRoll2">2–6</string>
     <string name="stuntyRollStunned">Stunned</string>
     <string name="stuntyRollStunnedFull">The player immediately becomes stunned, and is laid face-down on the pitch.</string>
+
+    <string-array name="casualtyRollNumbers">
+        <item>1–6</item>
+        <item>7–9</item>
+        <item>10–12</item>
+        <item>13–14</item>
+        <item>15–16</item>
+    </string-array>
+
+    <string-array name="casualtyRollHeaders">
+        <item>Badly Hurt</item>
+        <item>Seriously Hurt</item>
+        <item>Serious Injury</item>
+        <item>Lasting Injury</item>
+        <item>DEAD</item>
+    </string-array>
+
+    <string-array name="casualtyRollDescriptions">
+        <item>The player misses the rest of this game, but suffers no long term effect.</item>
+        <item>Miss Next Game</item>
+        <item>Niggling Injury and Miss Next Game</item>
+        <item>Characteristic Reduction and Miss Next Game</item>
+        <item>This player is far too dead to play Blood Bowl!</item>
+    </string-array>
+
+    <string name="casualtyRoll1">1–6</string>
+    <string name="casualtyRollBadlyHurt">Badly Hurt</string>
+    <string name="casualtyRollBadlyHurtFull">The player misses the rest of this game, but suffers no long term effect.</string>
+
+    <string-array name="lastingRollNumbers">
+        <item>1–2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="lastingRollHeaders">
+        <item>Head Injury</item>
+        <item>Smashed Knee</item>
+        <item>Broken Arm</item>
+        <item>Neck Injury</item>
+        <item>Dislocated Shoulder</item>
+    </string-array>
+
+    <string-array name="lastingRollDescriptions">
+        <item>-1 Armour Value</item>
+        <item>-1 Movement Allowance</item>
+        <item>-1 Passing Ability</item>
+        <item>-1 Agility</item>
+        <item>-1 Strength</item>
+    </string-array>
+
+    <string name="lastingNumber">1–2</string>
+    <string name="lastingHeader">Head Injury</string>
+    <string name="lastingDescription">-1 Armour Value</string>
+
+    <string-array name="nuffleTableNumbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="nuffleTableHeaders">
+        <item>Treacherous Trapdoor</item>
+        <item>Friends with the Ref</item>
+        <item>Stiletto</item>
+        <item>Iron Man</item>
+        <item>Knuckle Dusters</item>
+        <item>Bad Habits</item>
+        <item>Greasy Cleats</item>
+        <item>Blessed Statue of Nuffle</item>
+        <item>Moles under the pitch</item>
+        <item>Perfect Passing</item>
+        <item>Fan Interactions</item>
+        <item>Necessary Violence</item>
+        <item>Fouling Frenzy</item>
+        <item>Throw a rock</item>
+        <item>Under Scrutiny</item>
+        <item>Intensive Training</item>
+    </string-array>
+
+    <string-array name="nuffleTableDescriptions">
+        <item>Until the end of this half, every time any player enters a trapdoor square, for any reason, roll a D6. On a roll of 1,
+        the trapdoor falls open and the player is immediately removed from play. Treat them exactly as if they had been pushed
+        in the crowd. If the player was in possession of the ball, it bounces from the trapdoor square.</item>
+        <item>Until the end of this drive, you may treat a roll of 5 or 6 on the argue the call table as a \"well, when you
+        put it like that…\" result and a roll of 2-4 as an \"I don\'t care!\" result.</item>
+        <item>Randomly select one player on your team that is available to play during this drive and that does not have the
+        Loner (X+) trait. Until the end of this drive, that player has the stab trait.</item>
+        <item>Choose one player on your team that is available to play during this drive and that does not have the Loner (X+)
+        trait. Until the end of this game, that player improves their AV by 1, to a maximum of 11+.</item>
+        <item>Choose one player on your team that is available to play during this drive that does not have the Loner (X+)
+        trait. Until the end of this drive, that player gains the Mighty Blow (+1) skill.</item>
+        <item>Randomly select D3 opposition players that are available to play during this drive that do not have the Loner (X+)
+        trait. Until the end of this drive, those players gain the Loner (2+) trait.</item>
+        <item>Randomly select one opposition player that is available to play during this drive. That player had their boots
+        tampered with! Until the end of this drive, their MA is reduced by 1.</item>
+        <item>Choose one player on your team that is available to play during this drive and that does not have the Loner (X+)
+        trait. Until the end of this game, the player gains the Pro skill.</item>
+        <item>Until the end of this half, apply a -1 modifier every time a player attempts to rush an extra square (-2 should it
+        occur that both coaches have rolled this result).</item>
+        <item>Until the end of this game, any player on your team that makes a completion earns 2 spp rather than the
+        usual 1 spp.</item>
+        <item>Until the end of this drive, if a player on your team causes a casualty by pushing an opponent into the crowd,
+        that player will earn 2 spp exactly as if they had caused a casualty by performing a block action.</item>
+        <item>Until the end of this drive, any player on your team that causes a casualty earns 3 spp, rather than the
+        usual 2 spp.</item>
+        <item>Until the end of this drive, any player on your team that causes a casualty with a foul action earns 2 spp
+        exactly as if they had caused a casualty by performing a block action.</item>
+        <item>Until the end of this drive, should an opposition player stall, at the end of their team turn you may roll a D6.
+        On a roll of 5+, an angry fan throws a rock at that player. The player is immediately knocked down. </item>
+        <item>Until the end of this half, any player on the opposing team that commits a foul action is automatically
+        seen by the referee, even if a natural double is not rolled.</item>
+        <item>Randomly select one player on your team that is available to play during this drive and that does not have
+        the Loner (X+) trait. Until the end of the game, that player gains a single primary skill of your choice.</item>
+    </string-array>
+
+    <string name="nuffleNumber">1</string>
+    <string name="nuffleHeader">Treacherous Trapdoor</string>
+    <string name="nuffleDescription">Until the end of this half, every time any player enters a trapdoor square, for any reason, roll a D6. On a roll of 1,
+        the trapdoor falls open and the player is immediately removed from play. Treat them exactly as if they had been pushed
+        in the crowd. If the player was in possession of the ball, it bounces from the trapdoor square.</string>
 </resources>

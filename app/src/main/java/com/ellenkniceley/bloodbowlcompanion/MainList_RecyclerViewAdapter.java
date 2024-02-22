@@ -82,6 +82,12 @@ public class MainList_RecyclerViewAdapter extends RecyclerView.Adapter<MainList_
                     context.startActivity(intent);
                 });
                 break;
+            case 6:
+                holder.itemView.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, Nuffle_Table_Main.class);
+                    context.startActivity(intent);
+                });
+                break;
         }
     }
 

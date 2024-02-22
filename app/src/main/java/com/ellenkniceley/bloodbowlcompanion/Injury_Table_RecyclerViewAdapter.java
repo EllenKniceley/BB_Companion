@@ -52,6 +52,18 @@ public class Injury_Table_RecyclerViewAdapter extends RecyclerView.Adapter<Injur
                    context.startActivity(intent);
                });
                break;
+           case 2:
+               holder.itemView.setOnClickListener(v -> {
+                   Intent intent = new Intent(context, Casualty_Roll_Main.class);
+                   context.startActivity(intent);
+               });
+               break;
+           case 3:
+               holder.itemView.setOnClickListener(v -> {
+                   Intent intent = new Intent(context, Lasting_Roll_Main.class);
+                   context.startActivity(intent);
+               });
+               break;
        }
     }
 
