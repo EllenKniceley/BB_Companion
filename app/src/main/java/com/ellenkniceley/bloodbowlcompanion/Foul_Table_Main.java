@@ -31,7 +31,7 @@ public class Foul_Table_Main extends AppCompatActivity implements FoulRecyclerVi
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView title = findViewById(R.id.toolbar_title);
-        String foulTable = "Foul Table (1D6)";
+        String foulTable = "Argue the call table (1D6)";
         title.setText(foulTable);
 
         menuIcon.setOnClickListener(this::showMenu);
