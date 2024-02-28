@@ -1,6 +1,8 @@
 package com.ellenkniceley.bloodbowlcompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +11,23 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-public class Skills_main extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class Skills_main extends AppCompatActivity implements SkillsRecyclerViewInterface {
+
+    ArrayList<SkillsListModel> skillsListModels = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_skills_main);
+
+        RecyclerView recyclerView = findViewById(R.id.skillsRecyclerView);
+
+        setUpSkillsListModels();
+        SkillsRecyclerViewAdapter adapter = new SkillsRecyclerViewAdapter(this, skillsListModels, this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         ImageView menuIcon = findViewById(R.id.menu_icon);
         TextView title = findViewById(R.id.toolbar_title);
@@ -22,6 +35,15 @@ public class Skills_main extends AppCompatActivity {
         title.setText(skillsTable);
 
         menuIcon.setOnClickListener(this::showMenu);
+    }
+
+    private void setUpSkillsListModels() {
+        String[] skillsHeaders = getResources().getStringArray(R.array.skillHeaders);
+        String[] skillDescriptions = getResources().getStringArray(R.array.skillDescriptions);
+
+        for (int i = 0; i < skillsHeaders.length; i++) {
+            skillsListModels.add(new SkillsListModel(skillsHeaders[i],skillDescriptions[i]));
+        }
     }
 
     private void showMenu(View v){
@@ -39,5 +61,15 @@ public class Skills_main extends AppCompatActivity {
             return true;
         });
         popupMenu.show();
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(Skills_main.this, SkillsDescriptions.class);
+
+        intent.putExtra("TITLE", skillsListModels.get(position).getSkillsTitle());
+        intent.putExtra("DESCRIPTION", skillsListModels.get(position).getSkillsDescription());
+
+        startActivity(intent);
     }
 }

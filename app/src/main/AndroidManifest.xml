@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BloodbowlCompanion"
         tools:targetApi="31">
         <activity
+            android:name=".SkillsDescriptions"
+            android:exported="false" />
+        <activity
             android:name=".NuffleTableDescriptions"
             android:exported="false" />
         <activity
