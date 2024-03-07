@@ -3,6 +3,7 @@
     <string name="app_info">App Info</string>
     <string name="app_home">Home</string>
     <string name="current_version">Version:  1.0.0</string>
+    <string name="search">search</string>
 
 
     <string name="app_info_text_title">About the Blood Bowl Companion App</string>
@@ -11,6 +12,7 @@
     <string name="app_info_disclaimer">This is an unofficial application that is not endorsed in any way by Games Workshop Limited or any of
     its subsidiaries. Blood Bowl is a trademark of Games Workshop Limited. All Rights Reserved to their respective owners.</string>
     <string name="app_info_chart_credit">Credit to the Nuffle Amorical Football (NAF) for the passing chart.</string>
+    <string name="app_info_email">Contact: BB.Companion.App@gmail.com</string>
 
     <string-array name="list_headers">
         <item>Weather Table</item>

@@ -1,11 +1,15 @@
 package com.ellenkniceley.bloodbowlcompanion;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
@@ -24,6 +28,10 @@ public class Skills_main extends AppCompatActivity implements SkillsRecyclerView
 
         RecyclerView recyclerView = findViewById(R.id.skillsRecyclerView);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar !=null){
+        setSupportActionBar(toolbar);}
+
         setUpSkillsListModels();
         SkillsRecyclerViewAdapter adapter = new SkillsRecyclerViewAdapter(this, skillsListModels, this);
         recyclerView.setAdapter(adapter);
@@ -35,6 +43,8 @@ public class Skills_main extends AppCompatActivity implements SkillsRecyclerView
         title.setText(skillsTable);
 
         menuIcon.setOnClickListener(this::showMenu);
+
+
     }
 
     private void setUpSkillsListModels() {
@@ -71,5 +81,28 @@ public class Skills_main extends AppCompatActivity implements SkillsRecyclerView
         intent.putExtra("DESCRIPTION", skillsListModels.get(position).getSkillsDescription());
 
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.search_menu, menu);
+
+        MenuItem item = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) item.getActionView();
+
+        assert searchView != null;
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
     }
 }

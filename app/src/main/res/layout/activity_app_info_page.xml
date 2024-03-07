@@ -90,4 +90,20 @@
         app:layout_constraintTop_toBottomOf="@+id/appDisclaimerTextview"
         app:layout_constraintVertical_bias="0.095" />
 
+    <TextView
+        android:id="@+id/appEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graduate"
+        android:paddingHorizontal="10dp"
+        android:text="@string/app_info_email"
+        android:textColor="@color/list_background"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appInfoVersion"
+        app:layout_constraintVertical_bias="0.176" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
