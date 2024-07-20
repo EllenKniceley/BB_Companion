@@ -464,7 +464,7 @@
     <string-array name="skillDescriptions">
         <item><![CDATA[When this player performs a quick pass action or a short pass action, you may apply an additional +1
         modifier to the passing ability test.]]></item>
-        <item><![CDATA[*Skill is compulsory.\n\nIf this player wishes to perform a thor team-mate action, roll a D6 after they have
+        <item><![CDATA[*Skill is compulsory.\n\nIf this player wishes to perform a Throw Team-Mate action, roll a D6 after they have
         finished moving, but before they throw their team-mate. On a roll of 2+, continue with the throw as normal.
         On a roll of 1, this player will attempt to eat their team-mate. Roll another D6.\n\nOn a roll of 1, the team-mate
         has been eaten and is immediately removed from the team draft list. No apothecary can save them and no regeneration attempts
@@ -541,11 +541,11 @@
         activates, after declaring their action, they must roll a D6, adding 1 to the roll if they declared a block action
         or a blitz action. If they roll equal to or higher than the number shown in brackets, they may activate as normal.
             \n\nIf the player rolls lower than the number shown in brackets, or rolls a natural 1, they may continue their
-        activation as normal though they may change their declared action to a move action if they wish. If the player
-        declared an action that can only be performed once per team turn (such as a blitz action), this will still count
+        activation as normal though they may change their declared action to a move action if they wish.
+            \n\nIf the player declared an action that can only be performed once per team turn (such as a blitz action), this will still count
         as the one of that action for the team turn. At the end of their activation, they may bite an adjacent thrall
-        lineman team-mate (standing, prone, or stunned). If they bite a thrall, immediately make an injury roll for the
-        thrall, treating any casualty result as badly hurt; this will not cause a turnover unless the thrall was holding the
+        lineman team-mate (standing, prone, or stunned).
+            \n\nIf they bite a thrall, immediately make an injury roll for the thrall, treating any casualty result as badly hurt; this will not cause a Turnover unless the thrall was holding the
         ball. If they do not bite a thrall for any reason then a turnover is caused, the player will lose their tackle zone
         until they are next activated, and will immediately drop the ball if they were holding it. If the player was in the
         opposing end zone, no touchdown is scored. If a player who failed this roll wants to make a pass action, hand-off

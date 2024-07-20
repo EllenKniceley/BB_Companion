@@ -62,7 +62,7 @@
                 android:id="@+id/nuffleTableDescriptions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/graduate"
+                android:fontFamily="@font/montserrat"
                 android:padding="30dp"
                 android:text="@string/nuffleDescription"
                 android:textAlignment="center"

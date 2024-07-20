@@ -3,6 +3,7 @@ package com.ellenkniceley.bloodbowlcompanion;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements MainList_Recycler
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
 
         RecyclerView recyclerView = findViewById(R.id.mRecyclerView);
         ImageView menuIcon = findViewById(R.id.menu_icon);

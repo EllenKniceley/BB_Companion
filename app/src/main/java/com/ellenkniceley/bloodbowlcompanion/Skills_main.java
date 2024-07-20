@@ -29,8 +29,7 @@ public class Skills_main extends AppCompatActivity implements SkillsRecyclerView
         RecyclerView recyclerView = findViewById(R.id.skillsRecyclerView);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if (toolbar !=null){
-        setSupportActionBar(toolbar);}
+        setSupportActionBar(toolbar);
 
         setUpSkillsListModels();
         SkillsRecyclerViewAdapter adapter = new SkillsRecyclerViewAdapter(this, skillsListModels, this);
@@ -85,6 +84,7 @@ public class Skills_main extends AppCompatActivity implements SkillsRecyclerView
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        menu.clear();
         getMenuInflater().inflate(R.menu.search_menu, menu);
 
         MenuItem item = menu.findItem(R.id.action_search);
