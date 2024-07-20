@@ -2,7 +2,7 @@
     <string name="app_name">Blood Bowl Companion</string>
     <string name="app_info">App Info</string>
     <string name="app_home">Home</string>
-    <string name="current_version">Version:  1.0.0</string>
+    <string name="current_version">Version:  1.0.1</string>
     <string name="search">search</string>
 
 
@@ -462,27 +462,27 @@
     </string-array>
 
     <string-array name="skillDescriptions">
-        <item><![CDATA[When this player performs a quick pass action or a short pass action, you may apply an additional +1
-        modifier to the passing ability test.]]></item>
+        <item><![CDATA[When this player performs a Quick Pass action or a Short Pass action, you may apply an additional +1
+        modifier to the Passing Ability test.]]></item>
         <item><![CDATA[*Skill is compulsory.\n\nIf this player wishes to perform a Throw Team-Mate action, roll a D6 after they have
         finished moving, but before they throw their team-mate. On a roll of 2+, continue with the throw as normal.
         On a roll of 1, this player will attempt to eat their team-mate. Roll another D6.\n\nOn a roll of 1, the team-mate
-        has been eaten and is immediately removed from the team draft list. No apothecary can save them and no regeneration attempts
+        has been eaten and is immediately removed from the Team Draft list. No apothecary can save them and no Regeneration attempts
         can be made. If the team-mate was in possession of the ball, it will bounce from the square this player occupies.\n
-        On a roll of 2+, the team-mate squirms free and the throw team-mate action is automatically fumbled.]]></item>
+        On a roll of 2+, the team-mate squirms free and the Throw Team-Mate action is automatically fumbled.]]></item>
         <item><![CDATA[*Skill is compulsory.
-            \n\nWhen this player is activated, even if they are prone or have lost their tackle zone,
+            \n\nWhen this player is activated, even if they are Prone or have lost their Tackle Zone,
         immediately after declaring the action they will perform but before performing the action, roll a D6, applying a +2
-        modifier to the dice roll if you declared the player would perform a block or blitz action (or a special action granted
-        by a skill or trait that can be performed instead of a block action).
+        modifier to the dice roll if you declared the player would perform a Block or Blitz action (or a Special action granted
+        by a Skill or Trait that can be performed instead of a Block action).
             \n\nOn a roll of 1-3, this player lashes out at their team-mates:
-            \n\nOne Standing team-mate of your choice that is currently adjacent to this player is immediately knocked down
-        by this player. This does not cause a turnover unless the knocked down player was in possession of the ball. After making
-        an armour roll (and possible injury roll) against the knocked down player, this player may continue their activation
-        and complete their declared action if able. Note that, if this player has any applicable skills, the coach of the
-        opposing team may use them when making an armour roll (and possible injury roll) against the knocked down player.
-            \n\nIf this player is not currently adjacent to any standing team-mates, this player\'s activation ends immediately.
-        Additionally, this player loses their tackle zone until they are next activated.
+            \n\nOne Standing team-mate of your choice that is currently adjacent to this player is immediately Knocked Down
+        by this player. This does not cause a turnover unless the Knocked Down player was in possession of the ball. After making
+        an Armour roll (and possible Injury roll) against the Knocked Down player, this player may continue their activation
+        and complete their declared action if able. Note that, if this player has any applicable Skills, the coach of the
+        opposing team may use them when making an Armour roll (and possible Injury roll) against the Knocked Down player.
+            \n\nIf this player is not currently adjacent to any Standing team-mates, this player\'s activation ends immediately.
+        Additionally, this player loses their Tackle Zone until they are next activated.
             \n\nOn a roll of 4+, this player continues their activation as normal and completes their declared action.
             \n\nIf you declared that this player would perform an action which can only be performed once per team turn and
         this player\'s activation ended before the action could be completed, the action is considered to have been performed,
